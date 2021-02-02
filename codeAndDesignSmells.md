@@ -32,22 +32,23 @@ Deals with architectural issue  such as
 ### Code smells
 1. Method level 
 	- Identifier naming
-  	- Bloated method -> too many action acting in a single funciton
+  	- Bloated method -> too many action acting in a single function
   	- Excessive parameter -> long list of parameters.
   	- Excessive returns (not supported in all language)
-  	- God line -> lomg funciton call
+  	- God line -> long function call
 
 2. Class level smells
 	- Goldilocks zone
 		- Oversized classes
 		- Undersized classes
     - feature envy
-		* When class is uses a method excessively from another class.
+		* When class uses a method excessively from another class.
 		* Leads dependencies and brittle code.
-		* Need look closely at the class dependencies
+		* Need look closely at the class dependencies.
 		* Consider transferring code to dependent class or refactoring  to share class members.
 	- inappropriate intimacy
-		* When the class is dependent on implementation of others. class referring to another class private member.
+		* When the class is dependent on implementation of others.
+        * Class referring to another class private member.
 		* [Soulution] Refactoring code or creating a shared implementation key.
 	- Literal usage.
 		* Hard coded values. -> Make it offsite, resource file or database.
@@ -59,7 +60,7 @@ Deals with architectural issue  such as
 		* Too many duplicate of code.
 		* Update requires a repeated code blocks in multiple location to be modified.
 		* [Solution] both can be avoided by refactoring into separate code blocks.
-	- contrived complexity
+	- contrived(deliberately created) complexity
 		* unnecessarily complex implementation.
 
 
@@ -69,7 +70,7 @@ Deals with architectural issue  such as
     -  Missing abstraction - data clumping.
     -  multifaceted abstraction - class doing a lot of work, reading and encoding data from file and writing back.
     -  Duplicate abstraction
-    -  incomplete abstraction - class or interface doesnt implementate its responsibility fully. extending these class should implemenet all of its said responsibility.
+    -  incomplete abstraction - class or interface doesn't implement its responsibility fully. extending these class should implemenet all of its said responsibility.
 
 2. Encapsulartion
 		(Protection of abstraction or member)
