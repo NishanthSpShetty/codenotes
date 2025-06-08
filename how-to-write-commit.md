@@ -1,8 +1,8 @@
 ## Write git commit as follows [Read this for detailed explanation](https://chris.beams.io/posts/git-commit/)
 
 
-I personally write commit message which would complete the following statement
-_When this commit is applied, it will _YourCommitMessage
+I prefer to write commit message which would complete the following statement
+_When this commit is applied, it will _<YourCommitMessage>
 
 1. Separate subject from body with a blank line
 2. Limit the subject line to 50 characters
